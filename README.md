@@ -33,3 +33,8 @@ export OMP_NUM_THREADS=1
 * python gail/save_expert_traj.py --model-path assets/learned_models/Hopper-v2_ppo.p
 ### To do imitation learning
 * python gail/gail_gym.py --env-name Hopper-v2 --expert-traj-path assets/expert_traj/Hopper-v2_expert_traj.p
+
+### Commands Used
+* Train PPO model: python examples/ppo_gym.py --env-name MountainCarContinuous-v0 --save-model-interval 100 
+* Save expert PPO model: python gail/save_expert_traj.py --env-name MountainCarContinuous-v0 --model-path assets/learned_models/MountainCarContinuous-v0_ppo.p
+* Train GAIL: python gail/gail_gym.py --env-name MountainCarContinuous-v0 --expert-traj-path assets/expert_traj/MountainCarContinuous-v0_expert_traj.p
