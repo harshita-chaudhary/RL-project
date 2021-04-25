@@ -37,4 +37,4 @@ export OMP_NUM_THREADS=1
 ### Commands Used
 * python examples/ppo_gym.py --env-name MountainCarContinuous-v0 --save-model-interval 100
 * python gail/save_expert_traj.py --env-name MountainCarContinuous-v0 --model-path assets/learned_models/MountainCarContinuous-v0_ppo.p
-* python gail/gail_gym.py --env-name MountainCarContinuous-v0 --expert-traj-path assets/expert_traj/MountainCarContinuous-v0_expert_traj.p
+* python gail/gail_gym.py --env-name MountainCarContinuous-v0 --expert-traj-path assets/expert_traj/MountainCarContinuous-v0_expert_traj.p --save-model-interval 100
